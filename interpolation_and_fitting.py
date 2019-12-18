@@ -172,7 +172,7 @@ class Test3:
                 res = self.triple_corner_method([-5+count*h, -5+(count*h)+h], h, target)
                 count += 1
                 self.fig[n.index(i)].plot(target, res)
-            #self.fig[n.index(i)].plot(x, y, '-')
+            self.fig[n.index(i)].plot(x, y, '-')
         plt.show()
 
 
@@ -190,5 +190,5 @@ t = Test3()
 #t.test_3()
 #t.test_4()
 #t.test_5()
-t.test_6()
-#t.test_7()
+#t.test_6()
+t.test_7()

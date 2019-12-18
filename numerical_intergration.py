@@ -7,14 +7,17 @@ def f(x):
     if x == 0:
         return 1
     return (math.sin(x))/x
+
 def trapezium(a,b):
     result = ((b-a)/2)*(f(a)+f(b))
     print('%.5f' %result)
     return
+
 def Simpson(a,b):
     result = ((b-a)/6)*(f(a)+4*f((a+b)/2)+f(b))
     print('%.5f' %result)
     return
+
 def Cotes(a,b):
     result = ((b-a)/90)*(7*f(a)+32*f((3*a+b)/4)+12*f((a+b)/2)+32*f((a+3*b)/4)+7*f(b))
     print('%.5f' %result)
